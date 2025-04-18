@@ -1,0 +1,118 @@
+body {
+    background-color: black;
+    font-family: "Karla";
+}
+
+/* styling for container holding all content */
+.container {
+    margin: 10vh auto 0 auto;
+    width: 30rem;
+    max-width: 550px;
+    padding: 5rem 3.5rem 7rem 3.5rem; 
+    border-radius: 15px;
+    background-color: #1F2937;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 650px) {
+    .container {
+        padding: 3rem 1.5rem;
+        width: 80vw;
+        margin: 6rem auto 0 auto;
+    }
+    
+    h1 {
+        font-size: 1.65rem !important;
+        line-height: 30px !important;
+    }
+
+    #description-p {
+        font-size: .9rem !important;
+    }
+}
+@media (max-width: 431px) {
+    #password-one {
+        margin-bottom: 0rem !important;
+    }
+
+    #password-two {
+        margin-top: 0rem !important;
+    }
+}
+
+h1 {
+    color: white;
+    font-size: 43px;
+    line-height: 40px;
+    letter-spacing: -2.5%;
+    font-weight: bolder;
+    margin-bottom: .75rem;
+}
+
+span {
+    color: #4ADF86;
+}
+
+#description-p {
+    color: #D5D4D8;
+    font-size: 20px;
+    margin-top: 0px;
+    font-family: "Inter";
+    font-weight: 200;
+    line-height: 28px;
+}
+
+/* styling for all buttons with class "btn" */
+.btn {
+    border-radius: 6px;
+    border: none;
+    padding: 9px 17px 9px 15px;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* styling for one button (first, generate button) with specific ID */
+#generate-btn {
+    background-color: #10B981;
+    color: white;
+    margin: 3rem auto 2rem 0;
+    cursor: pointer;
+}
+
+#generate-btn:hover {
+    background-color: #0d9467;
+    transform: scale(1.01);
+}
+
+/* styling for button class holding two button fields to display random generated passwords */
+.password-fields {
+    border-top: 1px solid rgba(128, 128, 128, 0.198);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin: .5rem auto 0 auto;
+    width: 100%;
+}
+
+/* styling for 2 p tag fields with unique IDs in the button class above */
+#password-one, #password-two {
+    flex: 1; /* makes them grow evenly */
+    height: 30px;
+    background-color: #273549;
+    border-radius: 6px;
+    border: none;
+    color: #4ADF86;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    user-select: text;
+    margin-top: 2.5rem;
+
+}
